@@ -3,8 +3,9 @@ create procedure addUser
 	@password varchar(30),
 	@email varchar(30)
 AS
+begin
 	INSERT INTO _user values(@username, @password, @email, 1)
-GO
+end
 
 
 EXECUTE addUser 'kishor', 'password', 'k1shor'
